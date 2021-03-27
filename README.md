@@ -1,3 +1,1 @@
-# React Starter Project Includes: 
-
-TailwindCSS, Bootstrap-grid, custom scss structure
+# React Starter Project Includes: tailwindcss, bootstrap-grid, custom scss styles structure
