@@ -1,5 +1,5 @@
 @import "../node_modules/rfs/scss";
-
-h1 {
-  @include font-size(20rem);
-}
+@import "./assets/styles/utilities/utilities";
+@import "./assets/styles/base/base";
+@import "./assets/styles/components/components";
+@import "./assets/styles/pages/pages";

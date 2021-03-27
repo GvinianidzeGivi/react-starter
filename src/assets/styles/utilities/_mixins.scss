@@ -1,0 +1,33 @@
+@mixin font-face($name) {
+  @font-face {
+    font-family: $name;
+    src: url($font-path + $name + ".eot"),
+      url($font-path + $name + ".ttf") format("truetype"),
+      url($font-path + $name + ".woff") format("woff"),
+      url($font-path + $name + ".woff2") format("woff2"),
+      url($font-path + $name + ".svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+}
+
+@mixin prefixer($prop, $value) {
+  -webkit-#{$prop}: #{$value};
+  -moz-#{$prop}: #{$value};
+  -ms-#{$prop}: #{$value};
+  -o-#{$prop}: #{$value};
+  #{$prop}: #{$value};
+}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
